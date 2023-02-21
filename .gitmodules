@@ -4,3 +4,6 @@
 [submodule "external/pittacus"]
 	path = external/pittacus
 	url = https://github.com/izeigerman/pittacus.git
+[submodule "external/raft"]
+	path = external/raft
+	url = https://github.com/willemt/raft.git
