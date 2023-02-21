@@ -50,7 +50,7 @@ set(linenoise_srcs ${CMAKE_CURRENT_SOURCE_DIR}/build/liblinenoise.a)
 
 ######################################
 link_directories(${CMAKE_CURRENT_SOURCE_DIR}/build)
-set(p2p_pg_sources ${CMAKE_CURRENT_SOURCE_DIR}/src/dht.cpp ${CMAKE_CURRENT_SOURCE_DIR}/src/gossip.cpp ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
+set(p2p_pg_sources ${CMAKE_CURRENT_SOURCE_DIR}/src/dht.cpp ${CMAKE_CURRENT_SOURCE_DIR}/src/gossip.cpp ${CMAKE_CURRENT_SOURCE_DIR}/src/consensus.cpp ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp)
 set(p2p_pg_executable "p2p_pg")
 add_executable(${p2p_pg_executable} ${p2p_pg_sources})
 target_include_directories(${p2p_pg_executable} PRIVATE #[[${CMAKE_CURRENT_SOURCE_DIR}/src/]])
