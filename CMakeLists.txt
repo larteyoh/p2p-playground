@@ -31,7 +31,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/external/sqlite) # v3.39.1 (amal
 set(sqlite_srcs ${CMAKE_CURRENT_SOURCE_DIR}/build/libsqlite3.a)
 
 ######################################
-# libuv?
+# libuv
 find_package(LibUV)
 if(LIBUV_FOUND)
     message(STATUS "Using LibUV: ${LibUV_LIBRARIES} (v${LibUV_VERSION})")
